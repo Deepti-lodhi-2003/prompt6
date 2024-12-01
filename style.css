@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+   background-image: url("background.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   
+}
+.container{
+    width: 400px;
+    background-color:#363633;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 1px 5px 10px;
+    backdrop-filter: b lur(100px);
+}
+form{ 
+    display: flex;
+    flex-direction: column;
+     align-items: center;
+     justify-content: center;
+}
+form > h1{
+    font-size: 40px;
+    color: white;
+}
+form > p {
+    margin-top: 8px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 18.5px;
+    color: white;
+}
+input{
+    width: 70%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px; 
+    background-color: transparent;
+    box-shadow: 5px 5px 10px black;
+    color: white;
+}
+input:hover{
+    cursor: pointer;
+    border: 1px solid rgb(119, 119, 119);
+}
+textarea{
+    width: 70%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    box-shadow: 5px 5px 10px;
+}
+textarea:hover{
+    cursor: pointer;
+    border: 1px solid rgb(119, 119, 119);
+}
+.checked {
+    color: orange;
+}
+.star{
+    margin-bottom: 15px;
+}
+.star > i{
+    font-size: 30px;
+    margin-left: 10px;
+}
+button{
+    padding: 10px 45px;
+    font-size: 14.5px;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    box-shadow: 5px 5px 10px black;
+    color: white;
+}
+button:hover{
+    cursor: pointer;
+    background-color:rgb(119, 119, 119);
+}
+
+@media (max-width:600px) {
+    .container{
+        width: 350px;
+    }
+    form > h1{
+        font-size: 30px;
+    }
+    form > p {
+        font-size: 15px;
+    }
+}
